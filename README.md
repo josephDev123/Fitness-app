@@ -2,4 +2,4 @@
 
 ### coming ...
 
-#### currently working on the landing components
+#### currently working on the landing, login, sign-up  components

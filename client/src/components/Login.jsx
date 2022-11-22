@@ -4,9 +4,10 @@ import React from 'react';
 export default function Login() {
   return (
     <section className='container'>
-        <section className='row justify-content-center align-items-center'>
-          <section className='col-lg-4 col-md-6 col-sm-6'>
-            <h2 className='h3'>Login</h2>
+        <section className='d-flex justify-content-center'  style={{height:'80vh'}}>
+
+          <section className='col-lg-4 col-md-6 col-sm-6 mt-auto'>
+            <h2 className='display-4  text-center'>Login</h2>
               <form>
                     <div className="mb-3">
                       <label htmlFor="InputEmail" className="htmlForm-label">Email address</label>
