@@ -7,6 +7,7 @@ export default function Home() {
   return (
     <section className="container-fluid" style={{height:'100vh'}}>
         <section className="d-flex justify-content-center text-center" style={{height:'80vh'}}>
+         
           <section className='mt-auto'>
               <h1 className='display-2'>Fitness at home</h1>
               <p className='text-muted'>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
@@ -18,4 +19,4 @@ export default function Home() {
     </section>
   )
 }
-// align-items-center flex-column
+
