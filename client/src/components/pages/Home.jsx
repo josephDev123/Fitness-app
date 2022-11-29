@@ -1,11 +1,12 @@
 import React from 'react'
-import '../assets/styles/home.css';
+// import '../../assets/styles/home.css';
+import background_image from '../../assets/css-modules/home.module.css'
 import { redirect, useNavigate } from 'react-router-dom';
 
 export default function Home() {
   const navigate = useNavigate()
   return (
-    <section className="container-fluid" style={{height:'100vh'}}>
+    <section className={background_image.container_fluid} style={{height:'100vh'}}>
         <section className="d-flex justify-content-center text-center" style={{height:'80vh'}}>
          
           <section className='mt-auto'>

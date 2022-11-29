@@ -1,8 +1,10 @@
 import { createBrowserRouter } from "react-router-dom";
-import Home from './components/Home';
+import Home from './components/pages/Home';
 import Login from './components/Login';
 import Register from './components/Register'
 import Error from "./components/Error";
+import WelcomePage from  './components/pages/Welcome'
+import Dashboard from './components/Layouts/Dashboard'
 
 
 export const routes = createBrowserRouter([
@@ -10,14 +12,12 @@ export const routes = createBrowserRouter([
         path:'/',
         element:<Home/>,
         errorElement:<Error/>
-
     },
 
      {
-        path:'/dashboard',
-        element:<Home/>,
+        path:'admin/dashboard',
+        element:<Dashboard/>,
         errorElement:<Error/>
-
     },
 
     {
@@ -25,6 +25,7 @@ export const routes = createBrowserRouter([
         element:<Login/>,
         errorElement:<Error/>
     },
+
     {
         path:'/register',
         element:<Register/>,
