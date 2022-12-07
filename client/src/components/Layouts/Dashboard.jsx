@@ -8,6 +8,7 @@ ChartJS.register(CategoryScale,LinearScale,BarElement,Title,Tooltip, Legend);
 
 export const options = {
   responsive: true,
+  maintainAspectRatio: false,
   plugins: {
     legend: {
       position: 'top',
@@ -58,7 +59,7 @@ export default function Dashboard() {
 
             <section className="d-flex bg-transparent" style={{height:'100vh'}}>
               {/* sidebar */}
-                <aside className='collapse' id='navbarSupportedContent'>
+                <aside className='collapse pe-5' id='navbarSupportedContent'>
                    aside
                    <ul className="navbar-nav me-auto mb-2 mb-lg-0">
                     <li className="nav-item">
@@ -80,15 +81,24 @@ export default function Dashboard() {
                     <li className="nav-item">
                       <Link className="nav-link disabled">Disabled</Link>
                     </li>
+                    <li className="nav-item">
+                      <Link className="nav-link" to="#">Link</Link>
+                    </li>
+                    <li className="nav-item">
+                      <Link className="nav-link disabled">Disabled</Link>
+                    </li>
                   </ul>
                 </aside>
 
-                <main>
+                <main style={{height:'100vh'}}>
                      <h4 className='lead'>Hello Joseph</h4>
                      <h6 className=''>Welcome</h6>
-                     <section>
-                     <Bar options={options} data={data} />
-                     </section>
+                    {/* <section className='row'> */}
+                      <section className='d-flex flex-column border' style={{position: 'relative', height:'50vh', margin: 'auto', width:"70vw"}}>
+                          <Bar options={options} data={data} width={100}/>
+                      </section>
+                    {/* </section> */}
+                  {/* style={{position: 'relative', height:'40vh', width:"80vw"}} */}
                      <Outlet/>
                 </main>
                   
