@@ -4,7 +4,8 @@ import {Chart as ChartJS, CategoryScale,LinearScale,BarElement, Title,Tooltip,Le
 import { Bar } from 'react-chartjs-2';
 import { faker } from '@faker-js/faker';
 import   '../../assets/styles/dashboard_style.css'
-import  '../../assets/styles/dashboard.css'
+import  '../../assets/styles/dashboard.css';
+
 
 ChartJS.register(CategoryScale,LinearScale,BarElement,Title,Tooltip, Legend);
 
@@ -162,10 +163,10 @@ export default function Dashboard() {
               <h6 className=''>Welcome</h6>
             </section>
 
-          <section className='row h-75'> 
+            <section className='row' style={{maxHeight:'20rem'}}> 
                 <Bar options={options} data={data} width={100} />
             </section> 
-            <div className='row'>
+            <div className='row mt-4'>
               <Outlet/>
             </div>
           </main>
