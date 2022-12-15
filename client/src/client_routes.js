@@ -5,7 +5,8 @@ import Register from './components/Register'
 import Error from "./components/Error";
 import WelcomePage from  './components/pages/Welcome'
 import Dashboard from './components/Layouts/Dashboard'
-import Trending from  './components/pages/Trending'
+import Training from  './components/pages/Training';
+import IndexChart from "./components/IndexChart";
 
 
 export const routes = createBrowserRouter([
@@ -16,13 +17,19 @@ export const routes = createBrowserRouter([
     },
 
      {
-        path:'admin/dashboard',
+        path:'admin',
         element:<Dashboard/>,
         errorElement:<Error/>,
         children:[{
             index:true,
-            element:<Trending/>
-        }]
+            element:<IndexChart/>
+        },  
+        {
+            path:'training',
+            element:<Training/>,
+            errorElement:<Error/>,
+        },
+    ]
     },
 
     {
