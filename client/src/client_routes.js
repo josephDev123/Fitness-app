@@ -6,7 +6,7 @@ import Error from "./components/Error";
 import WelcomePage from  './components/pages/Welcome'
 import Dashboard from './components/Layouts/Dashboard'
 import Training from  './components/pages/Training';
-import IndexChart from "./components/IndexChart";
+// import IndexChart from "./components/IndexChart";
 
 
 export const routes = createBrowserRouter([
@@ -22,7 +22,7 @@ export const routes = createBrowserRouter([
         errorElement:<Error/>,
         children:[{
             index:true,
-            element:<IndexChart/>
+            element:<WelcomePage/>
         },  
         {
             path:'training',
