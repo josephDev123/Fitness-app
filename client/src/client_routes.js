@@ -3,7 +3,7 @@ import Home from './components/pages/Home';
 import Login from './components/Login';
 import Register from './components/Register'
 import Error from "./components/Error";
-import WelcomePage from  './components/pages/Welcome'
+import IndexPage from  './components/pages/IndexPage'
 import Dashboard from './components/Layouts/Dashboard'
 import Training from  './components/pages/Training';
 // import IndexChart from "./components/IndexChart";
@@ -22,7 +22,7 @@ export const routes = createBrowserRouter([
         errorElement:<Error/>,
         children:[{
             index:true,
-            element:<WelcomePage/>
+            element:<IndexPage/>
         },  
         {
             path:'training',

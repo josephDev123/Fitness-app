@@ -43,7 +43,7 @@ export const data = {
 
 
 
-export default function WelcomePage() {
+export default function IndexPage() {
   return (
     <section className='container'>
           <h1 className="h2">Dashboard</h1>

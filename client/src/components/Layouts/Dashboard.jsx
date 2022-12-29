@@ -23,7 +23,7 @@ export default function Dashboard() {
         <input className="form-control form-control-dark w-100 rounded-0 border-0 bg-body opacity-75" type="text" placeholder="Search" aria-label="Search"/>
         <div className="navbar-nav">
           <div className="nav-item text-nowrap">
-            <button className="btn btn-sm btn-danger opacity-75 px-3 m-2" to="#">Sign out</button>
+            <button className="btn btn-sm btn-danger opacity-75 px-3 m-2" >Sign out</button>
           </div>
         </div>
       </header>
@@ -114,7 +114,7 @@ export default function Dashboard() {
               <div className=""></div>
             </div></div>
            
-            <div className='row mt-4'>
+            <div className='row mt-2'>
               <Outlet/>
             </div>
           </main>
