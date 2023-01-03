@@ -1,25 +1,50 @@
-.card-header{
+.card-wrapper{
     width: 100%;
     max-height: 30%;
-    background: rgb(196,232,254);
-    background: radial-gradient(circle, rgba(196,232,254,1) 0%, rgba(162,162,199,1) 35%, rgba(196,232,254,1) 100%);
+    /* background: rgb(196,232,254); */
+    /* background: radial-gradient(circle, rgba(196,232,254,1) 0%, rgba(162,162,199,1) 35%, rgba(196,232,254,1) 100%); */
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    /* justify-content: space-between; */
     /* border: none;
     border-radius: 5rem; */
+    gap: 1rem;
     padding: 1rem;
+   
+}
+
+.box-wrapper{
+    display: flex;
+    justify-content:space-between;
+    /* max-width: 25%;  */
+    max-height: 45%;
+    flex: 1 1 20%;
+    border: 0.1rem green solid;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    overflow-y: auto;
 }
 
 .content{
+    flex: 1 1;
+}
+
+.conteloseBellyFat-header-img-bannernt{
+    flex: 1 1;
+}
+
+.loseBellyFat-header-img-banner > img{
+    object-fit: cover;
+}
+
+/* .content{
     flex: 1 1;
 }
 .header-img-banner{
     flex: 1 1;
 }
 
-.loseBellyFat-header-img-banner > img{
-    object-fit: contain;
-}
+
 
 
 /* .lose-belly-fat-wrapper{

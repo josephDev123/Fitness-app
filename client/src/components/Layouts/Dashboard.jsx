@@ -12,7 +12,7 @@ export default function Dashboard() {
   return (
 
    <>
-      <header className="navbar navbar-dark sticky-top bg-success flex-md-nowrap p-0 shadow">
+      <header className="navbar navbar-dark sticky-top bg-success flex-md-nowrap p-0 ">
         <Link className="navbar-brand col-md-3 col-lg-2 me-0 px-3 fs-6" to="#">
           <img src={process.env.PUBLIC_URL + '/imgs/logo/logo.png'} alt="Logo" width="30" height="24" className="d-inline-block me-2 align-text-top img-fluid img-thumbnail"/>
           Fitness

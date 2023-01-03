@@ -9,16 +9,43 @@ export default function LoseBellyFat() {
   return (
     <section className='lose-belly-fat-wrapper'>
         <div className='row'>
-            <div className='card-header' style={style}>
-               <div className='content'>
-                <h4>Lose Belly Fat</h4>
 
-               </div>
+            <div className='card-wrapper' style={style}>
+                <div className='box-wrapper'>
+                    <div className='content'>
+                        <h6>Name of exercise</h6>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. </p>
+                    </div>
 
-               <div className='loseBellyFat-header-img-banner'>
-                  <img src={process.env.PUBLIC_URL+'/imgs/edgar-chaparro.jpg'} className='img' alt='' loading='lazy' width='100%' height='100%'/>
-               </div>
+                    <div className='loseBellyFat-header-img-banner'>
+                      <img src={process.env.PUBLIC_URL+'/cartoons/plank-6573171_1280.png'} className='img' alt='' loading='lazy' width='100%' height='100%'/>
+                    </div>
+                    
+                </div>
 
+                <div className='box-wrapper'>
+                      <div className='content'>
+                      <h6>Name of exercise</h6>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    </div>
+
+                    <div className='loseBellyFat-header-img-banner'>
+                      <img src={process.env.PUBLIC_URL+'/cartoons/plank-6573171_1280.png'} className='img' alt='' loading='lazy' width='100%' height='100%'/>
+                    </div>
+                    
+                </div>
+
+                <div className='box-wrapper'>
+                      <div className='content'>
+                      <h6>Name of exercise</h6>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. </p>
+                    </div>
+
+                    <div className='loseBellyFat-header-img-banner'>
+                      <img src={process.env.PUBLIC_URL+'/cartoons/plank-6573171_1280.png'} className='img' alt='' loading='lazy' width='100%' height='100%'/>
+                    </div>
+                    
+                </div>
             </div>
 
         </div>
