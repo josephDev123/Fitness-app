@@ -10,8 +10,8 @@ export default function LoseBellyFat() {
     <section className='lose-belly-fat-wrapper'>
         <div className='row'>
 
-            <div className='card-wrapper' style={style}>
-                <div className='box-wrapper'>
+            <div className='cards-wrapper' >
+                <div className='card-wrapper' style={style}>
                     <div className='content'>
                         <h6>Name of exercise</h6>
                         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. </p>
@@ -23,7 +23,7 @@ export default function LoseBellyFat() {
                     
                 </div>
 
-                <div className='box-wrapper'>
+                <div className='card-wrapper'>
                       <div className='content'>
                       <h6>Name of exercise</h6>
                         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
@@ -35,7 +35,7 @@ export default function LoseBellyFat() {
                     
                 </div>
 
-                <div className='box-wrapper'>
+                <div className='card-wrapper'>
                       <div className='content'>
                       <h6>Name of exercise</h6>
                         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. </p>
