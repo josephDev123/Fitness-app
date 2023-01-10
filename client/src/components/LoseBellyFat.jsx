@@ -10,7 +10,7 @@ export default function LoseBellyFat() {
     <section className='lose-belly-fat-wrapper'>
         <div className='row'>
 
-            <div className='cards-wrapper' >
+            <div className='cards-wrapper'>
                 <div className='card-wrapper' style={style}>
                     <div className='content'>
                         <h6>Name of exercise</h6>
