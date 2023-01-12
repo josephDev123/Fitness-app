@@ -1,6 +1,7 @@
 .cards-wrapper{
-    max-height: 30%;
+    border: 1px solid red;
     display: flex;
+    justify-content: flex-start;
     flex-wrap: wrap;
     gap: 1rem;
     padding: 1rem;
@@ -10,25 +11,46 @@
 .card-wrapper{
     display: flex;
     justify-content:space-between;
-    max-height: 45%;
-    flex: 1 1 30%;
+    flex-wrap: wrap;
+    flex: 1 0;
     border: 0.1rem green solid;
     padding: 0.5rem;
     border-radius: 0.5rem;
-    overflow-y: auto;
-    overflow-x: auto;
+    overflow-y: auto;  
 }
 
 .content{
-    width: auto;
-    flex: 1 1;
+    border: 0.1rem orange solid;
+    /* width: auto; */
+    flex: 1 0;
 }
 
-.conteloseBellyFat-header-img-banner{
-    width: auto;
-    flex: 1 1;
+
+.loseBellyFat-header-img-banner{
+    border: 0.1rem blue solid;
+    /* width: auto; */
+    flex: 1 0;
 }
 
 .loseBellyFat-header-img-banner > img{
     object-fit: cover;
+    
 }
+
+
+/* @media screen and (max-width:980px) {
+    .card-wrapper{
+        display: flex;
+        flex-direction:column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .loseBellyFat-header-img-banner {
+       order: 1;
+    }
+    .content{
+        order: 2;
+        text-align: justify;
+    }
+} */
